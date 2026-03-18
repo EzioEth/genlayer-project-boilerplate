@@ -80,6 +80,7 @@ export const loading = (message: string, options?: ExternalToast) => {
 };
 
 // Promise toast for handling async operations
+// Promise toast for handling async operations
 export const promise = <T>(
   promise: Promise<T>,
   messages: {
@@ -93,7 +94,6 @@ export const promise = <T>(
     loading: messages.loading,
     success: messages.success,
     error: messages.error,
-  }, {
     ...defaultOptions,
     ...options,
   });
